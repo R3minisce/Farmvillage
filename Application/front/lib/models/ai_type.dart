@@ -1,0 +1,4 @@
+enum AIType {
+  ally,
+  enemy,
+}

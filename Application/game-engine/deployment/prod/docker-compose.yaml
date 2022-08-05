@@ -1,0 +1,8 @@
+version: "3.7"
+
+services:
+  game_engine:
+    image: registry.gitlab.com/dtm-henallux/masi/etudiants/streignard-remi/iad/farmvillage:NODE_prod
+    ports:
+      - 20001:3000
+      - 20003:3001

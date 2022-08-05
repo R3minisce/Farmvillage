@@ -1,0 +1,180 @@
+stages:
+  - Tests
+  - Publish
+  - Deploy
+
+tests_API:
+  stage: Tests
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "main" || $CI_COMMIT_BRANCH == "develop"'
+      changes:
+      - Application/FastAPI_Template/**/*
+  image: python:3.10
+  before_script:
+    - cd Application/FastAPI_Template
+    - python3 -m pip install -r requirements.txt
+  script:
+    - python3 -m pytest --junitxml=report.xml
+  artifacts:
+    when: always
+    reports:
+      junit: Application/FastAPI_Template/report.xml
+  tags:
+    - proxmox
+
+publish_API_prod:
+  stage: Publish
+  rules:
+  - if: '$CI_COMMIT_BRANCH == "main"'
+    changes:
+    - Application/FastAPI_Template/**/*
+  image: docker:latest
+  services:
+    - docker:dind
+  script:
+    - cd Application/FastAPI_Template
+    - docker build -t $CI_REGISTRY_IMAGE:API_prod .
+    - docker login -u gitlab-ci-token -p $CI_BUILD_TOKEN $CI_REGISTRY
+    - docker push $CI_REGISTRY_IMAGE:API_prod
+  tags:
+  - proxmox
+
+publish_API_dev:
+  stage: Publish
+  rules:
+  - if: '$CI_COMMIT_BRANCH == "develop"'
+    changes:
+    - Application/FastAPI_Template/**/*
+  image: docker:latest
+  services:
+    - docker:dind
+  script:
+    - cd Application/FastAPI_Template
+    - docker build -t $CI_REGISTRY_IMAGE:API_dev .
+    - docker login -u gitlab-ci-token -p $CI_BUILD_TOKEN $CI_REGISTRY
+    - docker push $CI_REGISTRY_IMAGE:API_dev
+  tags:
+  - proxmox
+
+deploy_API_prod:
+  stage: Deploy
+  rules:
+  - if: '$CI_COMMIT_BRANCH == "main"'
+    changes:
+    - Application/FastAPI_Template/**/*
+  image: docker
+  services:
+    - docker:dind
+  script:
+    - cd Application/FastAPI_Template/deployment/prod
+    - apk add --no-cache docker-compose
+    - docker login -u gitlab-ci-token -p $CI_BUILD_TOKEN $CI_REGISTRY
+    - docker-compose pull
+    - docker-compose up -d 
+  tags:
+    - proxmox
+
+deploy_API_dev:
+  stage: Deploy
+  rules:
+  - if: '$CI_COMMIT_BRANCH == "develop"'
+    changes:
+    - Application/FastAPI_Template/**/*
+  image: docker
+  services:
+    - docker:dind
+  script:
+    - cd Application/FastAPI_Template/deployment/dev
+    - apk add --no-cache docker-compose
+    - docker login -u gitlab-ci-token -p $CI_BUILD_TOKEN $CI_REGISTRY
+    - docker-compose pull
+    - docker-compose up -d
+  tags:
+    - proxmox
+
+### NODE
+
+tests_NODE:
+  stage: Tests
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "main" || $CI_COMMIT_BRANCH == "develop"'
+      changes:
+      - Application/game-engine/**/*
+  image: node:latest
+  before_script:
+    - cd Application/game-engine
+    - npm install
+  script:
+    - npm test
+  tags:
+    - proxmox
+
+publish_NODE_prod:
+  stage: Publish
+  rules:
+  - if: '$CI_COMMIT_BRANCH == "main"'
+    changes:
+    - Application/game-engine/**/*
+  image: docker:latest
+  services:
+    - docker:dind
+  script:
+    - cd Application/game-engine
+    - docker build -t $CI_REGISTRY_IMAGE:NODE_prod .
+    - docker login -u gitlab-ci-token -p $CI_BUILD_TOKEN $CI_REGISTRY
+    - docker push $CI_REGISTRY_IMAGE:NODE_prod
+  tags:
+  - proxmox
+
+publish_NODE_dev:
+  stage: Publish
+  rules:
+  - if: '$CI_COMMIT_BRANCH == "develop"'
+    changes:
+    - Application/game-engine/**/*
+  image: docker:latest
+  services:
+    - docker:dind
+  script:
+    - cd Application/game-engine
+    - docker build -t $CI_REGISTRY_IMAGE:NODE_dev .
+    - docker login -u gitlab-ci-token -p $CI_BUILD_TOKEN $CI_REGISTRY
+    - docker push $CI_REGISTRY_IMAGE:NODE_dev
+  tags:
+  - proxmox
+
+deploy_NODE_prod:
+  stage: Deploy
+  rules:
+  - if: '$CI_COMMIT_BRANCH == "main"'
+    changes:
+    - Application/game-engine/**/*
+  image: docker
+  services:
+    - docker:dind
+  script:
+    - cd Application/game-engine/deployment/prod
+    - apk add --no-cache docker-compose
+    - docker login -u gitlab-ci-token -p $CI_BUILD_TOKEN $CI_REGISTRY
+    - docker-compose pull
+    - docker-compose up -d 
+  tags:
+    - proxmox
+
+deploy_NODE_dev:
+  stage: Deploy
+  rules:
+  - if: '$CI_COMMIT_BRANCH == "develop"'
+    changes:
+    - Application/game-engine/**/*
+  image: docker
+  services:
+    - docker:dind
+  script:
+    - cd Application/game-engine/deployment/dev
+    - apk add --no-cache docker-compose
+    - docker login -u gitlab-ci-token -p $CI_BUILD_TOKEN $CI_REGISTRY
+    - docker-compose pull
+    - docker-compose up -d
+  tags:
+    - proxmox

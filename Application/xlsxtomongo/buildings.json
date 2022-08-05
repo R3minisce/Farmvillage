@@ -1,0 +1,542 @@
+[
+    {
+        "INFO": {
+            "ID": "B_01",
+            "NAME": "HQ",
+            "DESC": "no desc",
+            "PROD_TYPE": "VILLAGER"
+        },
+        "STATS": [
+            {
+                "LEVEL": 1,
+                "WOOD_COST": 0,
+                "STONE_COST": 0,
+                "IRON_COST": 0,
+                "MAX_VILLAGER": 0,
+                "MAX_STORAGE": 10,
+                "PROD": 0,
+                "HP": 100
+            },
+            {
+                "LEVEL": 2,
+                "WOOD_COST": 100,
+                "STONE_COST": 0,
+                "IRON_COST": 0,
+                "MAX_VILLAGER": 0,
+                "MAX_STORAGE": 10,
+                "PROD": 0,
+                "HP": 200
+            },
+            {
+                "LEVEL": 3,
+                "WOOD_COST": 100,
+                "STONE_COST": 100,
+                "IRON_COST": 0,
+                "MAX_VILLAGER": 0,
+                "MAX_STORAGE": 20,
+                "PROD": 0,
+                "HP": 300
+            },
+            {
+                "LEVEL": 4,
+                "WOOD_COST": 400,
+                "STONE_COST": 400,
+                "IRON_COST": 100,
+                "MAX_VILLAGER": 0,
+                "MAX_STORAGE": 20,
+                "PROD": 0,
+                "HP": 400
+            },
+            {
+                "LEVEL": 5,
+                "WOOD_COST": 800,
+                "STONE_COST": 800,
+                "IRON_COST": 800,
+                "MAX_VILLAGER": 0,
+                "MAX_STORAGE": 30,
+                "PROD": 0,
+                "HP": 500
+            }
+        ]
+    },
+    {
+        "INFO": {
+            "ID": "B_02",
+            "NAME": "MILL",
+            "DESC": "no desc",
+            "PROD_TYPE": "FOOD"
+        },
+        "STATS": [
+            {
+                "LEVEL": 1,
+                "WOOD_COST": 100,
+                "STONE_COST": 0,
+                "IRON_COST": 0,
+                "MAX_VILLAGER": 2,
+                "MAX_STORAGE": 100,
+                "PROD": 20,
+                "HP": 100
+            },
+            {
+                "LEVEL": 2,
+                "WOOD_COST": 200,
+                "STONE_COST": 0,
+                "IRON_COST": 0,
+                "MAX_VILLAGER": 3,
+                "MAX_STORAGE": 200,
+                "PROD": 20,
+                "HP": 200
+            },
+            {
+                "LEVEL": 3,
+                "WOOD_COST": 200,
+                "STONE_COST": 100,
+                "IRON_COST": 0,
+                "MAX_VILLAGER": 4,
+                "MAX_STORAGE": 200,
+                "PROD": 20,
+                "HP": 300
+            },
+            {
+                "LEVEL": 4,
+                "WOOD_COST": 200,
+                "STONE_COST": 200,
+                "IRON_COST": 100,
+                "MAX_VILLAGER": 5,
+                "MAX_STORAGE": 400,
+                "PROD": 20,
+                "HP": 400
+            },
+            {
+                "LEVEL": 5,
+                "WOOD_COST": 400,
+                "STONE_COST": 400,
+                "IRON_COST": 400,
+                "MAX_VILLAGER": 6,
+                "MAX_STORAGE": 400,
+                "PROD": 25,
+                "HP": 500
+            }
+        ]
+    },
+    {
+        "INFO": {
+            "ID": "B_03",
+            "NAME": "SAWMILL",
+            "DESC": "no desc",
+            "PROD_TYPE": "WOOD"
+        },
+        "STATS": [
+            {
+                "LEVEL": 1,
+                "WOOD_COST": 100,
+                "STONE_COST": 0,
+                "IRON_COST": 0,
+                "MAX_VILLAGER": 2,
+                "MAX_STORAGE": 100,
+                "PROD": 20,
+                "HP": 100
+            },
+            {
+                "LEVEL": 2,
+                "WOOD_COST": 100,
+                "STONE_COST": 100,
+                "IRON_COST": 0,
+                "MAX_VILLAGER": 3,
+                "MAX_STORAGE": 200,
+                "PROD": 20,
+                "HP": 200
+            },
+            {
+                "LEVEL": 3,
+                "WOOD_COST": 200,
+                "STONE_COST": 100,
+                "IRON_COST": 0,
+                "MAX_VILLAGER": 4,
+                "MAX_STORAGE": 200,
+                "PROD": 20,
+                "HP": 300
+            },
+            {
+                "LEVEL": 4,
+                "WOOD_COST": 200,
+                "STONE_COST": 200,
+                "IRON_COST": 100,
+                "MAX_VILLAGER": 5,
+                "MAX_STORAGE": 300,
+                "PROD": 20,
+                "HP": 400
+            },
+            {
+                "LEVEL": 5,
+                "WOOD_COST": 400,
+                "STONE_COST": 400,
+                "IRON_COST": 400,
+                "MAX_VILLAGER": 6,
+                "MAX_STORAGE": 400,
+                "PROD": 25,
+                "HP": 500
+            }
+        ]
+    },
+    {
+        "INFO": {
+            "ID": "B_04",
+            "NAME": "STONE DEPOSIT",
+            "DESC": "no desc",
+            "PROD_TYPE": "STONE"
+        },
+        "STATS": [
+            {
+                "LEVEL": 1,
+                "WOOD_COST": 100,
+                "STONE_COST": 0,
+                "IRON_COST": 0,
+                "MAX_VILLAGER": 2,
+                "MAX_STORAGE": 100,
+                "PROD": 15,
+                "HP": 100
+            },
+            {
+                "LEVEL": 2,
+                "WOOD_COST": 100,
+                "STONE_COST": 100,
+                "IRON_COST": 0,
+                "MAX_VILLAGER": 3,
+                "MAX_STORAGE": 150,
+                "PROD": 15,
+                "HP": 200
+            },
+            {
+                "LEVEL": 3,
+                "WOOD_COST": 200,
+                "STONE_COST": 100,
+                "IRON_COST": 0,
+                "MAX_VILLAGER": 4,
+                "MAX_STORAGE": 200,
+                "PROD": 15,
+                "HP": 300
+            },
+            {
+                "LEVEL": 4,
+                "WOOD_COST": 200,
+                "STONE_COST": 200,
+                "IRON_COST": 100,
+                "MAX_VILLAGER": 5,
+                "MAX_STORAGE": 300,
+                "PROD": 20,
+                "HP": 400
+            },
+            {
+                "LEVEL": 5,
+                "WOOD_COST": 400,
+                "STONE_COST": 400,
+                "IRON_COST": 400,
+                "MAX_VILLAGER": 6,
+                "MAX_STORAGE": 400,
+                "PROD": 25,
+                "HP": 500
+            }
+        ]
+    },
+    {
+        "INFO": {
+            "ID": "B_05",
+            "NAME": "IRON DEPOSIT",
+            "DESC": "no desc",
+            "PROD_TYPE": "IRON"
+        },
+        "STATS": [
+            {
+                "LEVEL": 1,
+                "WOOD_COST": 100,
+                "STONE_COST": 0,
+                "IRON_COST": 0,
+                "MAX_VILLAGER": 2,
+                "MAX_STORAGE": 100,
+                "PROD": 15,
+                "HP": 100
+            },
+            {
+                "LEVEL": 2,
+                "WOOD_COST": 100,
+                "STONE_COST": 100,
+                "IRON_COST": 0,
+                "MAX_VILLAGER": 3,
+                "MAX_STORAGE": 150,
+                "PROD": 15,
+                "HP": 200
+            },
+            {
+                "LEVEL": 3,
+                "WOOD_COST": 200,
+                "STONE_COST": 100,
+                "IRON_COST": 0,
+                "MAX_VILLAGER": 4,
+                "MAX_STORAGE": 200,
+                "PROD": 15,
+                "HP": 300
+            },
+            {
+                "LEVEL": 4,
+                "WOOD_COST": 200,
+                "STONE_COST": 200,
+                "IRON_COST": 100,
+                "MAX_VILLAGER": 5,
+                "MAX_STORAGE": 300,
+                "PROD": 20,
+                "HP": 400
+            },
+            {
+                "LEVEL": 5,
+                "WOOD_COST": 400,
+                "STONE_COST": 400,
+                "IRON_COST": 400,
+                "MAX_VILLAGER": 6,
+                "MAX_STORAGE": 400,
+                "PROD": 25,
+                "HP": 500
+            }
+        ]
+    },
+    {
+        "INFO": {
+            "ID": "B_06",
+            "NAME": "WAREHOUSE",
+            "DESC": "no desc",
+            "PROD_TYPE": "STORAGE"
+        },
+        "STATS": [
+            {
+                "LEVEL": 1,
+                "WOOD_COST": 100,
+                "STONE_COST": 100,
+                "IRON_COST": 0,
+                "MAX_VILLAGER": 2,
+                "MAX_STORAGE": 10000,
+                "PROD": 0,
+                "HP": 100
+            },
+            {
+                "LEVEL": 2,
+                "WOOD_COST": 200,
+                "STONE_COST": 100,
+                "IRON_COST": 0,
+                "MAX_VILLAGER": 3,
+                "MAX_STORAGE": 12500,
+                "PROD": 0,
+                "HP": 200
+            },
+            {
+                "LEVEL": 3,
+                "WOOD_COST": 200,
+                "STONE_COST": 200,
+                "IRON_COST": 0,
+                "MAX_VILLAGER": 4,
+                "MAX_STORAGE": 15000,
+                "PROD": 0,
+                "HP": 300
+            },
+            {
+                "LEVEL": 4,
+                "WOOD_COST": 400,
+                "STONE_COST": 400,
+                "IRON_COST": 200,
+                "MAX_VILLAGER": 5,
+                "MAX_STORAGE": 17500,
+                "PROD": 0,
+                "HP": 400
+            },
+            {
+                "LEVEL": 5,
+                "WOOD_COST": 600,
+                "STONE_COST": 600,
+                "IRON_COST": 400,
+                "MAX_VILLAGER": 6,
+                "MAX_STORAGE": 20000,
+                "PROD": 0,
+                "HP": 500
+            }
+        ]
+    },
+    {
+        "INFO": {
+            "ID": "B_07",
+            "NAME": "ALCHEMIST HUT",
+            "DESC": "no desc",
+            "PROD_TYPE": "POTIONS"
+        },
+        "STATS": [
+            {
+                "LEVEL": 1,
+                "WOOD_COST": 100,
+                "STONE_COST": 100,
+                "IRON_COST": 0,
+                "MAX_VILLAGER": 2,
+                "MAX_STORAGE": 10,
+                "PROD": 0,
+                "HP": 100
+            },
+            {
+                "LEVEL": 2,
+                "WOOD_COST": 200,
+                "STONE_COST": 100,
+                "IRON_COST": 0,
+                "MAX_VILLAGER": 2,
+                "MAX_STORAGE": 12,
+                "PROD": 0,
+                "HP": 200
+            },
+            {
+                "LEVEL": 3,
+                "WOOD_COST": 200,
+                "STONE_COST": 200,
+                "IRON_COST": 0,
+                "MAX_VILLAGER": 3,
+                "MAX_STORAGE": 15,
+                "PROD": 0,
+                "HP": 300
+            },
+            {
+                "LEVEL": 4,
+                "WOOD_COST": 200,
+                "STONE_COST": 200,
+                "IRON_COST": 100,
+                "MAX_VILLAGER": 3,
+                "MAX_STORAGE": 17,
+                "PROD": 0,
+                "HP": 400
+            },
+            {
+                "LEVEL": 5,
+                "WOOD_COST": 400,
+                "STONE_COST": 400,
+                "IRON_COST": 400,
+                "MAX_VILLAGER": 4,
+                "MAX_STORAGE": 20,
+                "PROD": 0,
+                "HP": 500
+            }
+        ]
+    },
+    {
+        "INFO": {
+            "ID": "B_08",
+            "NAME": "INN",
+            "DESC": "no desc",
+            "PROD_TYPE": "HEALING"
+        },
+        "STATS": [
+            {
+                "LEVEL": 1,
+                "WOOD_COST": 100,
+                "STONE_COST": 100,
+                "IRON_COST": 0,
+                "MAX_VILLAGER": 2,
+                "MAX_STORAGE": 10,
+                "PROD": 0,
+                "HP": 100
+            },
+            {
+                "LEVEL": 2,
+                "WOOD_COST": 200,
+                "STONE_COST": 100,
+                "IRON_COST": 0,
+                "MAX_VILLAGER": 2,
+                "MAX_STORAGE": 12,
+                "PROD": 0,
+                "HP": 200
+            },
+            {
+                "LEVEL": 3,
+                "WOOD_COST": 200,
+                "STONE_COST": 200,
+                "IRON_COST": 0,
+                "MAX_VILLAGER": 3,
+                "MAX_STORAGE": 15,
+                "PROD": 0,
+                "HP": 300
+            },
+            {
+                "LEVEL": 4,
+                "WOOD_COST": 200,
+                "STONE_COST": 200,
+                "IRON_COST": 100,
+                "MAX_VILLAGER": 3,
+                "MAX_STORAGE": 17,
+                "PROD": 0,
+                "HP": 400
+            },
+            {
+                "LEVEL": 5,
+                "WOOD_COST": 400,
+                "STONE_COST": 400,
+                "IRON_COST": 400,
+                "MAX_VILLAGER": 4,
+                "MAX_STORAGE": 20,
+                "PROD": 0,
+                "HP": 500
+            }
+        ]
+    },
+    {
+        "INFO": {
+            "ID": "B_09",
+            "NAME": "BANK",
+            "DESC": "no desc",
+            "PROD_TYPE": "GOLD"
+        },
+        "STATS": [
+            {
+                "LEVEL": 1,
+                "WOOD_COST": 100,
+                "STONE_COST": 100,
+                "IRON_COST": 0,
+                "MAX_VILLAGER": 2,
+                "MAX_STORAGE": 10,
+                "PROD": 0,
+                "HP": 100
+            },
+            {
+                "LEVEL": 2,
+                "WOOD_COST": 200,
+                "STONE_COST": 100,
+                "IRON_COST": 0,
+                "MAX_VILLAGER": 2,
+                "MAX_STORAGE": 12,
+                "PROD": 0,
+                "HP": 200
+            },
+            {
+                "LEVEL": 3,
+                "WOOD_COST": 200,
+                "STONE_COST": 200,
+                "IRON_COST": 0,
+                "MAX_VILLAGER": 3,
+                "MAX_STORAGE": 15,
+                "PROD": 0,
+                "HP": 300
+            },
+            {
+                "LEVEL": 4,
+                "WOOD_COST": 200,
+                "STONE_COST": 200,
+                "IRON_COST": 100,
+                "MAX_VILLAGER": 3,
+                "MAX_STORAGE": 17,
+                "PROD": 0,
+                "HP": 400
+            },
+            {
+                "LEVEL": 5,
+                "WOOD_COST": 400,
+                "STONE_COST": 400,
+                "IRON_COST": 400,
+                "MAX_VILLAGER": 4,
+                "MAX_STORAGE": 20,
+                "PROD": 0,
+                "HP": 500
+            }
+        ]
+    }
+]

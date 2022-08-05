@@ -1,0 +1,10 @@
+const String gameEngineIP = "192.113.50.2";
+const String gameEngineSocketPort = "20001";
+const String gameEngineHttpPort = "20003";
+const String boomCraftIP = "192.113.50.7";
+const String boomCraftPort = "8000";
+const String veggieCrushIP = "192.113.50.2";
+const String veggieCrushPort = "8505";
+const String twitterURL = "api.twitter.com";
+// const String gameEngineHttpIP = "192.113.50.2";
+// const String gameEngineHttpPort = "21003";

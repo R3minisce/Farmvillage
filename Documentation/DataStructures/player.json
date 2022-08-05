@@ -1,0 +1,21 @@
+[{
+  "_id": {
+    "$oid": "617afbeeb433a17217cd6104"
+  },
+  "pseudo": "Romoulator",
+  "user_account": {
+    "$oid": "617afbedb433a17217cd6103"
+  },
+  "hp": 20,
+  "max_hp": 50,
+  "inventory": [
+    {
+      "label": "wood",
+      "quantity": 200,
+      "max_quantity": 400
+    }
+  ],
+  "creation_time": {
+    "$date": "2021-10-28T19:37:17.995Z"
+  }
+}]

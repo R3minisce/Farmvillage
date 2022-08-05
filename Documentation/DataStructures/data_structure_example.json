@@ -1,0 +1,78 @@
+{
+    "data": [
+
+        {
+            "id": 1,
+            "username": "Romoule",
+            "email": "eazeaeazeazeza@azeazea",
+            "password": "rgerge",
+            "salt": "rfre",
+            "disabled": false,
+            "subscribed": true,
+            "village_ids": [ 1, 2, 3 ],
+            "premium_currency": 450
+        },
+
+        {
+            "hp": 5,
+            "maxHp": 45,
+            "resources": [
+                {
+                    "type": "food",
+                    "capacity": 100
+                }
+
+            ]
+        },
+
+        {
+            "id": 1,
+            "name": "le village de romoule",
+            "level": 5,
+            "principal": true,
+            "status": "PEACE",
+            "last_connection": "<DATE>",
+
+            "events": [
+                {
+                    "id": 1,
+                    "type": "BUFF",
+                    "effects": [
+                        {
+                            
+                        }
+                    ],
+                    "startingTime": "<DATE>",
+                    "duration": "<TIME>"
+                }
+            ],
+
+            "resources": [
+                {
+                    "name": "villagers",
+                    "items": [
+                        {
+                            "id": 1,
+                            "name": "Eren",
+                            "hp": 5,
+                            "maxHp": 45
+                        }
+                    ]
+                }
+            ],
+
+            "buildings": [
+                {
+                    "id": 1,
+                    "base": 2,
+                    "level": 3,
+                    "health_prc": "80%",
+                    "production": "100%",
+                    "villagers": [ 1, 2 ],
+                    "storage": 400
+                }
+
+            ]
+        } 
+    ]
+}

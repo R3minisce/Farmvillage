@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FarmVillage</string>
+    <string name="facebook_app_id">424257552781279</string>
+    <string name="fb_login_protocol_scheme">fb424257552781279</string>
+    <string name="facebook_client_token">726fb26f3c877002481d73aab801824c</string>
+</resources>

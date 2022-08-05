@@ -1,0 +1,17 @@
+[{
+  "_id": {
+    "$oid": "617afbedb433a17217cd6103"
+  },
+  "username": "Romoule",
+  "email": "test@email.com",
+  "password": "b'\\xe9\\xae\\x15\\xdbo\\x13,\\x9fw*\\x9d\\xe1\\xb4\\x02\\x8e\\x81'",
+  "villages": [],
+  "premium_currency": 450,
+  "disabled": false,
+  "scopes": [
+    "admin"
+  ],
+  "creation_time": {
+    "$date": "2021-10-28T19:37:17.961Z"
+  }
+}]

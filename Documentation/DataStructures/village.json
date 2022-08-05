@@ -1,0 +1,61 @@
+[{
+  "_id": {
+    "$oid": "617afbeeb433a17217cd6105"
+  },
+  "name": "village_01",
+  "level": 1,
+  "principal": true,
+  "status": "jusqu_ici_tout_va_bien",
+  "creation_time": {
+    "$date": "2021-10-28T19:37:18.009Z"
+  },
+  "resources": [
+    {
+      "label": "wood",
+      "quantity": 200,
+      "max_quantity": 400
+    },
+    {
+      "label": "stone",
+      "quantity": 200,
+      "max_quantity": 400
+    },
+    {
+      "label": "iron",
+      "quantity": 200,
+      "max_quantity": 400
+    }
+  ],
+  "events": [
+    {
+      "label": "event_01",
+      "type": "buff",
+      "effects": [
+        {
+          "label": "wood",
+          "ratio": 200
+        }
+      ],
+      "duration": 4,
+      "starting_time": {
+        "$date": "2021-10-28T19:37:18.009Z"
+      }
+    }
+  ],
+  "buildings": [
+    {
+      "label": "HQ",
+      "level": 1,
+      "production_ratio": 0,
+      "villagers": [
+        {
+          "name": "Thiery",
+          "hp": 20,
+          "max_hp": 20,
+          "alive": true
+        }
+      ],
+      "storage": 200
+    }
+  ]
+}]

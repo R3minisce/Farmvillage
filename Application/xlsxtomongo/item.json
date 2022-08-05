@@ -1,0 +1,65 @@
+[
+  {
+    "label": "small_life_potion",
+    "type": "potion",
+    "desc": "",
+    "target": "health",
+    "ratio": 50,
+    "price": 20,
+    "duration": 300
+  },
+  {
+    "label": "large_life_potion",
+    "type": "potion",
+    "desc": "",
+    "target": "health",
+    "ratio": 100,
+    "price": 60,
+    "duration": 300
+  },
+  {
+    "label": "small_damage_potion",
+    "type": "potion",
+    "desc": "",
+    "target": "damage",
+    "ratio": 125,
+    "price": 20,
+    "duration": 300
+  },
+  {
+    "label": "large_damage_potion",
+    "type": "potion",
+    "desc": "",
+    "target": "damage",
+    "ratio": 150,
+    "price": 60,
+    "duration": 300
+  },
+  {
+    "label": "small_speed_potion",
+    "type": "potion",
+    "desc": "",
+    "target": "speed",
+    "ratio": 150,
+    "price": 20,
+    "duration": 300
+  },
+  {
+    "label": "large_speed_potion",
+    "type": "potion",
+    "desc": "",
+    "target": "speed",
+    "ratio": 200,
+    "price": 60,
+    "duration": 300
+  },
+  {
+    "label": "ally",
+    "type": "ally",
+    "desc": "",
+    "target": "",
+    "ratio": 0,
+    "price": 100,
+    "duration": 0
+  }
+]

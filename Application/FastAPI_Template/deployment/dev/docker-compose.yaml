@@ -1,0 +1,7 @@
+version: "3.7"
+
+services:
+  API:
+    image: registry.gitlab.com/dtm-henallux/masi/etudiants/streignard-remi/iad/farmvillage:API_dev
+    ports:
+      - 21000:8000
